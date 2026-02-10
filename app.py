@@ -3,7 +3,7 @@ import socket
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        msg = f"Hello app Zmena V_5 Host={socket.gethostname()}\n /br co třeba druhý radek"
+        msg = f"Hello app Zmena V_5 Host={socket.gethostname()}\n co treba druhy radek \n treti radek"
         self.send_response(200)
         self.send_header("Content-Type", "text/plain")
         self.end_headers()
